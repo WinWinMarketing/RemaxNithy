@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Remax</title>
+
+    <link rel="icon" type="image/x-icon" href="images/remax-logo.png">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="default-bg-1">
+
+    <section class="dashboard-wrapper">
+        <div class="main-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="header-container">
+
+                            <div class="logo-card">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="images/remax-logo.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="currentpage">
+                                    <p><i class="fa-solid fa-user"></i> Agents</p>
+                                </div>
+                            </div>
+
+                            <div class="dropdown">
+
+                                <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="admin-card-text">
+                                        <h5>Mr. Admin</h5>
+                                        <p>Super Admin</p>
+                                    </div>
+                                    <div class="admin-card-icon ms-3">
+                                        <i class="fa-solid fa-user"></i>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-menu mt-3 user-dropdown">
+                                    <div class="admin-card-text text-start mb-3 border-bottom pb-3">
+                                        <h5>Mr. Admin</h5>
+                                        <p>Super Admin</p>
+                                    </div>
+
+                                    <ul>
+                                        <li>
+                                            <a href="settings.html"><i class="fa-solid fa-gear red"></i> Settings</a>
+                                        </li>
+                                        <li>
+                                            <a href="login.html"><i class="fa-solid fa-right-from-bracket blue"></i> Logout</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="main-content-container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-1">
+                        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="sidebar-nav">
+                                    <ul>
+                                        <li>
+                                            <a href="index.html">
+                                                <div class="svg-items"><i class="fa-solid fa-house"></i></div>
+                                                <span>Dashboard</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="forms.html">
+                                                <div class="svg-items"><i class="fa-solid fa-file-lines"></i></div>
+                                                <span>Forms</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="videos.html">
+                                                <div class="svg-items"><i class="fa-solid fa-video"></i></div>
+                                                <span>Videos</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="agents.html" class="active">
+                                                <div class="svg-items"><i class="fa-solid fa-user"></i></div>
+                                                <span>Agents</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="vendors.html">
+                                                <div class="svg-items"><i class="fa-solid fa-house-user"></i></div>
+                                                <span>Vendors</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="mentorship.html">
+                                                <div class="svg-items"><i class="fa-solid fa-user-group"></i></div>
+                                                <span>Mentorship</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://www.condob2b.com/" target="_blank">
+                                                <div class="svg-items"><i class="fa-solid fa-building"></i></div>
+                                                <span>Preconstruction</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="calendar.html">
+                                                <div class="svg-items"><i class="fa-solid fa-calendar"></i></div>
+                                                <span>Calendar</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="technology.html">
+                                                <div class="svg-items"><i class="fa-solid fa-house-signal"></i></div>
+                                                <span>Technology Hub</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="settings.html">
+                                                <div class="svg-items"><i class="fa-solid fa-gear"></i></div>
+                                                <span>Settings</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </nav>
+                    </div>
+
+                    <div class="col-lg-11">
+                        <div class="content-container">
+
+                            <div class="row reverse-flex">
+
+                                <div class="col-lg-9  p-4">
+                                    <div class="subtitle-item mb-3">
+                                        <h4 class="subtitle-1">Agents List</h4>
+                                    </div>
+
+                                    <div class="default-content-1">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Profile </th>
+                                                    <th scope="col">First Name</th>
+                                                    <th scope="col">Last Name </th>
+                                                    <th scope="col">Phone Number</th>
+                                                    <th scope="col">Email ID</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col">Action</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>
+                                                        <div class="picture-col">
+                                                            <img src="images/vendors.jpg" alt="" />
+                                                        </div>
+                                                    </th>
+                                                    <td>Johnson</td>
+                                                    <td>Abraham</td>
+                                                    <td>+1 822-000-0000</td>
+                                                    <td>info@domain.com</td>
+                                                    <td>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input border-0" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="d-menu">
+                                                                <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <div class="d-menu-icon">
+                                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="dropdown-menu mt-3 user-dropdown">
+                                                                    <ul>
+
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#formedit"><i
+                                                                                    class="fa-solid fa-pen blue"></i>
+                                                                                Edit</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="" data-bs-toggle="modal" data-bs-target="#deletealert"><i
+                                                                                    class="fa-solid fa-trash red"></i>
+                                                                                Delete</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <div class="picture-col">
+                                                            <img src="images/vendors.jpg" alt="" />
+                                                        </div>
+                                                    </th>
+                                                    <td>Johnson</td>
+                                                    <td>Abraham</td>
+                                                    <td>+1 822-000-0000</td>
+                                                    <td>info@domain.com</td>
+                                                    <td>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input border-0" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="d-menu">
+                                                                <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <div class="d-menu-icon">
+                                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="dropdown-menu mt-3 user-dropdown">
+                                                                    <ul>
+
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#formedit"><i
+                                                                                    class="fa-solid fa-pen blue"></i>
+                                                                                Edit</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="" data-bs-toggle="modal" data-bs-target="#deletealert"><i
+                                                                                    class="fa-solid fa-trash red"></i>
+                                                                                Delete</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <div class="picture-col">
+                                                            <img src="images/vendors.jpg" alt="" />
+                                                        </div>
+                                                    </th>
+                                                    <td>Johnson</td>
+                                                    <td>Abraham</td>
+                                                    <td>+1 822-000-0000</td>
+                                                    <td>info@domain.com</td>
+                                                    <td>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input border-0" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="d-menu">
+                                                                <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <div class="d-menu-icon">
+                                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="dropdown-menu mt-3 user-dropdown">
+                                                                    <ul>
+
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#formedit"><i
+                                                                                    class="fa-solid fa-pen blue"></i>
+                                                                                Edit</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="" data-bs-toggle="modal" data-bs-target="#deletealert"><i
+                                                                                    class="fa-solid fa-trash red"></i>
+                                                                                Delete</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <div class="picture-col">
+                                                            <img src="images/vendors.jpg" alt="" />
+                                                        </div>
+                                                    </th>
+                                                    <td>Johnson</td>
+                                                    <td>Abraham</td>
+                                                    <td>+1 822-000-0000</td>
+                                                    <td>info@domain.com</td>
+                                                    <td>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input border-0" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="d-menu">
+                                                                <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <div class="d-menu-icon">
+                                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="dropdown-menu mt-3 user-dropdown">
+                                                                    <ul>
+
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#formedit"><i
+                                                                                    class="fa-solid fa-pen blue"></i>
+                                                                                Edit</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="" data-bs-toggle="modal" data-bs-target="#deletealert"><i
+                                                                                    class="fa-solid fa-trash red"></i>
+                                                                                Delete</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <div class="picture-col">
+                                                            <img src="images/vendors.jpg" alt="" />
+                                                        </div>
+                                                    </th>
+                                                    <td>Johnson</td>
+                                                    <td>Abraham</td>
+                                                    <td>+1 822-000-0000</td>
+                                                    <td>info@domain.com</td>
+                                                    <td>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input border-0" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="d-menu">
+                                                                <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <div class="d-menu-icon">
+                                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="dropdown-menu mt-3 user-dropdown">
+                                                                    <ul>
+
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#formedit"><i
+                                                                                    class="fa-solid fa-pen blue"></i>
+                                                                                Edit</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="" data-bs-toggle="modal" data-bs-target="#deletealert"><i
+                                                                                    class="fa-solid fa-trash red"></i>
+                                                                                Delete</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <div class="picture-col">
+                                                            <img src="images/vendors.jpg" alt="" />
+                                                        </div>
+                                                    </th>
+                                                    <td>Johnson</td>
+                                                    <td>Abraham</td>
+                                                    <td>+1 822-000-0000</td>
+                                                    <td>info@domain.com</td>
+                                                    <td>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input border-0" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="d-menu">
+                                                                <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <div class="d-menu-icon">
+                                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="dropdown-menu mt-3 user-dropdown">
+                                                                    <ul>
+
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#formedit"><i
+                                                                                    class="fa-solid fa-pen blue"></i>
+                                                                                Edit</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="" data-bs-toggle="modal" data-bs-target="#deletealert"><i
+                                                                                    class="fa-solid fa-trash red"></i>
+                                                                                Delete</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <div class="picture-col">
+                                                            <img src="images/vendors.jpg" alt="" />
+                                                        </div>
+                                                    </th>
+                                                    <td>Johnson</td>
+                                                    <td>Abraham</td>
+                                                    <td>+1 822-000-0000</td>
+                                                    <td>info@domain.com</td>
+                                                    <td>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input border-0" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="d-menu">
+                                                                <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <div class="d-menu-icon">
+                                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="dropdown-menu mt-3 user-dropdown">
+                                                                    <ul>
+
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#formedit"><i
+                                                                                    class="fa-solid fa-pen blue"></i>
+                                                                                Edit</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="" data-bs-toggle="modal" data-bs-target="#deletealert"><i
+                                                                                    class="fa-solid fa-trash red"></i>
+                                                                                Delete</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <div class="picture-col">
+                                                            <img src="images/vendors.jpg" alt="" />
+                                                        </div>
+                                                    </th>
+                                                    <td>Johnson</td>
+                                                    <td>Abraham</td>
+                                                    <td>+1 822-000-0000</td>
+                                                    <td>info@domain.com</td>
+                                                    <td>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input border-0" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="d-menu">
+                                                                <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <div class="d-menu-icon">
+                                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="dropdown-menu mt-3 user-dropdown">
+                                                                    <ul>
+
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#formedit"><i
+                                                                                    class="fa-solid fa-pen blue"></i>
+                                                                                Edit</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="" data-bs-toggle="modal" data-bs-target="#deletealert"><i
+                                                                                    class="fa-solid fa-trash red"></i>
+                                                                                Delete</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <div class="picture-col">
+                                                            <img src="images/vendors.jpg" alt="" />
+                                                        </div>
+                                                    </th>
+                                                    <td>Johnson</td>
+                                                    <td>Abraham</td>
+                                                    <td>+1 822-000-0000</td>
+                                                    <td>info@domain.com</td>
+                                                    <td>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input border-0" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="d-menu">
+                                                                <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <div class="d-menu-icon">
+                                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="dropdown-menu mt-3 user-dropdown">
+                                                                    <ul>
+
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#formedit"><i
+                                                                                    class="fa-solid fa-pen blue"></i>
+                                                                                Edit</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="" data-bs-toggle="modal" data-bs-target="#deletealert"><i
+                                                                                    class="fa-solid fa-trash red"></i>
+                                                                                Delete</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>
+                                                        <div class="picture-col">
+                                                            <img src="images/vendors.jpg" alt="" />
+                                                        </div>
+                                                    </th>
+                                                    <td>Johnson</td>
+                                                    <td>Abraham</td>
+                                                    <td>+1 822-000-0000</td>
+                                                    <td>info@domain.com</td>
+                                                    <td>
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input border-0" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+                                                            <div class="d-menu">
+                                                                <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <div class="d-menu-icon">
+                                                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="dropdown-menu mt-3 user-dropdown">
+                                                                    <ul>
+
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#formedit"><i
+                                                                                    class="fa-solid fa-pen blue"></i>
+                                                                                Edit</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="" data-bs-toggle="modal" data-bs-target="#deletealert"><i
+                                                                                    class="fa-solid fa-trash red"></i>
+                                                                                Delete</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+
+                                    <div class="d-block mt-4">
+                                        <nav aria-label="...">
+                                            <ul class="pagination">
+                                                <li class="page-item disabled">
+                                                    <a class="page-link">Previous</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item active" aria-current="page">
+                                                    <a class="page-link" href="#">2</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">Next</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="col-lg-3 p-4">
+
+                                    <div class="default-content-1">
+                                        <div class="subtitle-item mb-3">
+                                            <h4 class="subtitle-1">Create a new Agent</h4>
+                                        </div>
+
+                                        <div class="form-card mb-3">
+                                            <label class="form-label mb-0">First Name*</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+
+                                        <div class="form-card mb-3">
+                                            <label class="form-label mb-0">Last Name*</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+
+                                        <div class="form-card mb-3">
+                                            <label class="form-label mb-0">Phone*</label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="basic-addon1">+1</span>
+                                                <input type="tel" class="form-control">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="form-card mb-3">
+                                            <label class="form-label mb-0">Password*</label>
+                                            <input type="password" class="form-control">
+                                        </div>
+
+                                        <div class="form-card mb-3">
+                                            <label class="form-label mb-0">Username*</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+
+                                        <div class="form-card mb-3">
+                                            <label class="form-label mb-0">Email*</label>
+                                            <input type="email" class="form-control">
+                                        </div>
+
+                                        <div class="form-card mb-3">
+                                            <label class="form-label mb-0">Upload Picture</label>
+                                            <input type="file" class="form-control">
+                                        </div>
+
+                                        <div class="form-card mb-3">
+                                            <label class="form-label mb-0">Video URL</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+
+                                        <div class="form-card mb-3">
+                                            <div class="d-flex justify-content-center">
+                                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                                                <button class="btn btn-primary ms-2">Submit</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- formedit -->
+        <div class="modal fade" id="formedit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+                        <div class="display-card">
+                            <h5 class="mb-2">Edit Agent Profile</h5>
+
+                            <div class="default-content-1">
+
+                                <div class="form-card mb-3">
+                                    <label class="form-label mb-0">First Name*</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="form-card mb-3">
+                                    <label class="form-label mb-0">Last Name*</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="form-card mb-3">
+                                    <label class="form-label mb-0">Phone*</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">+1</span>
+                                        <input type="tel" class="form-control">
+                                    </div>
+
+                                </div>
+
+                                <div class="form-card mb-3">
+                                    <label class="form-label mb-0">Password*</label>
+                                    <input type="password" class="form-control">
+                                </div>
+
+                                <div class="form-card mb-3">
+                                    <label class="form-label mb-0">Username*</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="form-card mb-3">
+                                    <label class="form-label mb-0">Email*</label>
+                                    <input type="email" class="form-control">
+                                </div>
+
+                                <div class="form-card mb-3">
+                                    <label class="form-label mb-0">Upload Picture</label>
+                                    <input type="file" class="form-control">
+                                </div>
+
+                                <div class="form-card mb-3">
+                                    <label class="form-label mb-0">Video URL</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-primary">Save Changes</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- formedit -->
+
+        <!-- formview -->
+        <div class="modal fade" id="deletealert" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+                        <div class="display-card text-center">
+                            <h5 class="mb-2">Delete Agent</h5>
+
+                            <div class="default-content-1">
+
+                                <p>Are you sure to delete?</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- formview -->
+
+    </section>
+
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

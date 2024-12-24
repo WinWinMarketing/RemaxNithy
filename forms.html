@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Remax</title>
+
+    <link rel="icon" type="image/x-icon" href="images/remax-logo.png">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="default-bg-1">
+
+    <section class="dashboard-wrapper">
+        <div class="main-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="header-container">
+
+                            <div class="logo-card">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="images/remax-logo.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="currentpage">
+                                    <p><i class="fa-solid fa-file-lines"></i> Forms</p>
+                                </div>
+                            </div>
+
+                            <div class="dropdown">
+
+                                <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="admin-card-text">
+                                        <h5>Mr. Admin</h5>
+                                        <p>Super Admin</p>
+                                    </div>
+                                    <div class="admin-card-icon ms-3">
+                                        <i class="fa-solid fa-user"></i>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-menu mt-3 user-dropdown">
+                                    <div class="admin-card-text text-start mb-3 border-bottom pb-3">
+                                        <h5>Mr. Admin</h5>
+                                        <p>Super Admin</p>
+                                    </div>
+
+                                    <ul>
+                                        <li>
+                                            <a href="settings.html"><i class="fa-solid fa-gear red"></i> Settings</a>
+                                        </li>
+                                        <li>
+                                            <a href="login.html"><i class="fa-solid fa-right-from-bracket blue"></i> Logout</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="main-content-container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-1">
+                        <nav class="navbar navbar-expand-lg">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="sidebar-nav">
+                                    <ul>
+                                        <li>
+                                            <a href="index.html">
+                                                <div class="svg-items"><i class="fa-solid fa-house"></i></div>
+                                                <span>Dashboard</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="forms.html" class="active">
+                                                <div class="svg-items"><i class="fa-solid fa-file-lines"></i></div>
+                                                <span>Forms</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="videos.html">
+                                                <div class="svg-items"><i class="fa-solid fa-video"></i></div>
+                                                <span>Videos</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="agents.html">
+                                                <div class="svg-items"><i class="fa-solid fa-user"></i></div>
+                                                <span>Agents</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="vendors.html">
+                                                <div class="svg-items"><i class="fa-solid fa-house-user"></i></div>
+                                                <span>Vendors</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="mentorship.html">
+                                                <div class="svg-items"><i class="fa-solid fa-user-group"></i></div>
+                                                <span>Mentorship</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://www.condob2b.com/" target="_blank">
+                                                <div class="svg-items"><i class="fa-solid fa-building"></i></div>
+                                                <span>Preconstruction</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="calendar.html">
+                                                <div class="svg-items"><i class="fa-solid fa-calendar"></i></div>
+                                                <span>Calendar</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="technology.html">
+                                                <div class="svg-items"><i class="fa-solid fa-house-signal"></i></div>
+                                                <span>Technology Hub</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="settings.html">
+                                                <div class="svg-items"><i class="fa-solid fa-gear"></i></div>
+                                                <span>Settings</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </nav>
+                    </div>
+
+                    <div class="col-lg-11">
+                        <div class="content-container">
+
+                            <ul class="nav nav-tabs tabscontent-nav" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Form List</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link ms-2" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Clauses List
+                                    </button>
+                                </li>
+
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+
+                                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+                                    <div class="row">
+                                        <div class="col-lg-8">
+
+                                            <div class="form-list">
+                                                <div class="d-block">
+                                                    <a href="forms-details.html">Tehcno Form Details</a>
+                                                </div>
+                                                <div class="d-menu">
+                                                    <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="d-menu-icon">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-menu mt-3 user-dropdown">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="forms-details.html"><i
+                                                                        class="fa-solid fa-eye"></i> View</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="forms.html"><i class="fa-solid fa-pen blue"></i> Edit</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="" data-bs-toggle="modal" data-bs-target="#formdelete"><i
+                                                                        class="fa-solid fa-trash red"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end form-list-->
+
+                                            <div class="form-list">
+                                                <div class="d-block">
+                                                    <a href="javascript:void(0)" class="d-block" data-bs-toggle="modal" data-bs-target="#formview2">Tehcno Form Details</a>
+                                                </div>
+                                                <div class="d-menu">
+                                                    <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="d-menu-icon">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-menu mt-3 user-dropdown">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="forms-details.html"><i
+                                                                        class="fa-solid fa-eye"></i> View</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="forms.html"><i class="fa-solid fa-pen blue"></i> Edit</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="" data-bs-toggle="modal" data-bs-target="#formdelete"><i
+                                                                        class="fa-solid fa-trash red"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end form-list-->
+
+                                            <div class="form-list">
+                                                <div class="d-block">
+                                                    <a href="forms-details.html">Tehcno Form Details</a>
+                                                </div>
+                                                <div class="d-menu">
+                                                    <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="d-menu-icon">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-menu mt-3 user-dropdown">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="forms-details.html"><i
+                                                                        class="fa-solid fa-eye"></i> View</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="forms.html"><i class="fa-solid fa-pen blue"></i> Edit</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="" data-bs-toggle="modal" data-bs-target="#formdelete"><i
+                                                                        class="fa-solid fa-trash red"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end form-list-->
+
+                                            <div class="form-list">
+                                                <div class="d-block">
+                                                    <a href="forms-details.html">Tehcno Form Details</a>
+                                                </div>
+                                                <div class="d-menu">
+                                                    <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="d-menu-icon">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-menu mt-3 user-dropdown">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="forms-details.html"><i
+                                                                        class="fa-solid fa-eye"></i> View</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="forms.html"><i class="fa-solid fa-pen blue"></i> Edit</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="" data-bs-toggle="modal" data-bs-target="#formdelete"><i
+                                                                        class="fa-solid fa-trash red"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end form-list-->
+
+                                            <div class="form-list">
+                                                <div class="d-block">
+                                                    <a href="forms-details.html">Tehcno Form Details</a>
+                                                </div>
+                                                <div class="d-menu">
+                                                    <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="d-menu-icon">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-menu mt-3 user-dropdown">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="forms-details.html"><i
+                                                                        class="fa-solid fa-eye"></i> View</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0)"><i
+                                                                        class="fa-solid fa-pen blue"></i> Edit</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="" data-bs-toggle="modal" data-bs-target="#formdelete"><i
+                                                                        class="fa-solid fa-trash red"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end form-list-->
+
+                                            <div class="form-list">
+                                                <div class="d-block">
+                                                    <a href="forms-details.html">Tehcno Form Details</a>
+                                                </div>
+                                                <div class="d-menu">
+                                                    <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="d-menu-icon">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-menu mt-3 user-dropdown">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="forms-details.html"><i
+                                                                        class="fa-solid fa-eye"></i> View</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="forms.html"><i class="fa-solid fa-pen blue"></i> Edit</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="" data-bs-toggle="modal" data-bs-target="#formdelete"><i
+                                                                        class="fa-solid fa-trash red"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end form-list-->
+
+                                            <div class="form-list">
+                                                <div class="d-block">
+                                                    <a href="forms-details.html">Tehcno Form Details</a>
+                                                </div>
+                                                <div class="d-menu">
+                                                    <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="d-menu-icon">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-menu mt-3 user-dropdown">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="forms-details.html"><i
+                                                                        class="fa-solid fa-eye"></i> View</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="forms.html"><i class="fa-solid fa-pen blue"></i> Edit</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="" data-bs-toggle="modal" data-bs-target="#formdelete"><i
+                                                                        class="fa-solid fa-trash red"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end form-list-->
+
+                                            <div class="d-block mt-4">
+                                                <nav aria-label="...">
+                                                    <ul class="pagination">
+                                                        <li class="page-item disabled">
+                                                            <a class="page-link">Previous</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item active" aria-current="page">
+                                                            <a class="page-link" href="#">2</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Next</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-lg-4 p-4">
+
+                                            <div class="default-content-1">
+                                                <div class="subtitle-item mb-3">
+                                                    <h4 class="subtitle-1">Create a New Form</h4>
+                                                </div>
+
+                                                <div class="form-card mb-3">
+                                                    <label class="form-label mb-0">Form Title</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+
+                                                <div class="form-card mb-3">
+                                                    <label class="form-label mb-0">Document Upload</label>
+                                                    <input type="file" class="form-control">
+                                                </div>
+
+                                                <div class="form-card mb-3">
+                                                    <label class="form-label mb-0">URL</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+
+                                                <div class="form-card mb-3">
+                                                    <label class="form-label mb-0">Add more files</label>
+                                                    <button class="btn btn-sm btn-success ms-2">Add +</button>
+                                                </div>
+
+                                                <div class="form-card mb-3">
+                                                    <button class="btn btn-primary">SUBMIT</button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+                                    <div class="row">
+                                        <div class="col-lg-8">
+
+                                            <div class="form-list">
+                                                <div class="d-block">
+                                                    <a href="forms-details.html">Clauses List</a>
+                                                </div>
+                                                <div class="d-menu">
+                                                    <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="d-menu-icon">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-menu mt-3 user-dropdown">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="forms-details.html"><i
+                                                                        class="fa-solid fa-eye"></i> View</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="forms.html"><i class="fa-solid fa-pen blue"></i> Edit</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="" data-bs-toggle="modal" data-bs-target="#formdelete"><i
+                                                                        class="fa-solid fa-trash red"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end form-list-->
+
+                                            <div class="form-list">
+                                                <div class="d-block">
+                                                    <a href="forms-details.html">Clauses List</a>
+                                                </div>
+                                                <div class="d-menu">
+                                                    <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="d-menu-icon">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-menu mt-3 user-dropdown">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="forms-details.html"><i
+                                                                    class="fa-solid fa-eye"></i> View</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="forms.html"><i class="fa-solid fa-pen blue"></i> Edit</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="" data-bs-toggle="modal" data-bs-target="#formdelete"><i
+                                                                        class="fa-solid fa-trash red"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end form-list-->
+
+                                            <div class="form-list">
+                                                <div class="d-block">
+                                                    <a href="forms-details.html">Clauses List</a>
+                                                </div>
+                                                <div class="d-menu">
+                                                    <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="d-menu-icon">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-menu mt-3 user-dropdown">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="forms-details.html"><i
+                                                                    class="fa-solid fa-eye"></i> View</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="forms.html"><i class="fa-solid fa-pen blue"></i> Edit</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="" data-bs-toggle="modal" data-bs-target="#formdelete"><i
+                                                                        class="fa-solid fa-trash red"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end form-list-->
+
+                                            <div class="form-list">
+                                                <div class="d-block">
+                                                    <a href="forms-details.html">Clauses List</a>
+                                                </div>
+                                                <div class="d-menu">
+                                                    <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="d-menu-icon">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-menu mt-3 user-dropdown">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="forms-details.html"><i
+                                                                    class="fa-solid fa-eye"></i> View</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="forms.html"><i class="fa-solid fa-pen blue"></i> Edit</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="" data-bs-toggle="modal" data-bs-target="#formdelete"><i
+                                                                        class="fa-solid fa-trash red"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end form-list-->
+
+                                            <div class="form-list">
+                                                <div class="d-block">
+                                                    <a href="forms-details.html">Clauses List</a>
+                                                </div>
+                                                <div class="d-menu">
+                                                    <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="d-menu-icon">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-menu mt-3 user-dropdown">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="forms-details.html"><i
+                                                                    class="fa-solid fa-eye"></i> View</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="forms.html"><i class="fa-solid fa-pen blue"></i> Edit</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="" data-bs-toggle="modal" data-bs-target="#formdelete"><i
+                                                                        class="fa-solid fa-trash red"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end form-list-->
+
+                                            <div class="form-list">
+                                                <div class="d-block">
+                                                    <a href="forms-details.html">Clauses List</a>
+                                                </div>
+                                                <div class="d-menu">
+                                                    <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="d-menu-icon">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-menu mt-3 user-dropdown">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="forms-details.html"><i
+                                                                    class="fa-solid fa-eye"></i> View</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="forms.html"><i class="fa-solid fa-pen blue"></i> Edit</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="" data-bs-toggle="modal" data-bs-target="#formdelete"><i
+                                                                        class="fa-solid fa-trash red"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end form-list-->
+
+                                            <div class="form-list">
+                                                <div class="d-block">
+                                                    <a href="forms-details.html">Clauses List</a>
+                                                </div>
+                                                <div class="d-menu">
+                                                    <div class="admin-card dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <div class="d-menu-icon">
+                                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-menu mt-3 user-dropdown">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="forms-details.html"><i
+                                                                        class="fa-solid fa-eye"></i> View</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="forms.html"><i class="fa-solid fa-pen blue"></i> Edit</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="" data-bs-toggle="modal" data-bs-target="#formdelete"><i
+                                                                        class="fa-solid fa-trash red"></i> Delete</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--end form-list-->
+
+                                            <div class="d-block mt-4">
+                                                <nav aria-label="...">
+                                                    <ul class="pagination">
+                                                        <li class="page-item disabled">
+                                                            <a class="page-link">Previous</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                        <li class="page-item active" aria-current="page">
+                                                            <a class="page-link" href="#">2</a>
+                                                        </li>
+                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                        <li class="page-item">
+                                                            <a class="page-link" href="#">Next</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-lg-4 p-4">
+
+                                            <div class="default-content-1">
+                                                <div class="subtitle-item mb-3">
+                                                    <h4 class="subtitle-1">Create a New Clause</h4>
+                                                </div>
+
+                                                <div class="form-card mb-3">
+                                                    <label class="form-label mb-0">Form Title</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+
+                                                <div class="form-card mb-3">
+                                                    <label class="form-label mb-0">Document Upload</label>
+                                                    <input type="file" class="form-control">
+                                                </div>
+
+                                                <div class="form-card mb-3">
+                                                    <label class="form-label mb-0">URL</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+
+                                                <div class="form-card mb-3">
+                                                    <label class="form-label mb-0">Add more files</label>
+                                                    <button class="btn btn-sm btn-success ms-2">Add +</button>
+                                                </div>
+
+                                                <div class="form-card mb-3">
+                                                    <button class="btn btn-primary">SUBMIT</button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- formview -->
+        <div class="modal fade" id="formview" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+                        <div class="display-card">
+                            <h5 class="mb-2">Tehcno Form title</h5>
+                            <ul class="mb-3 d-flex">
+                                <li><a href="" class="btn btn-outline-dark">URL</a></li>
+                                <li><a href="" class="btn btn-primary ms-2">Download PDF</a></li>
+                            </ul>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- formview -->
+
+        <!-- formview -->
+        <div class="modal fade" id="formview2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+                        <div class="display-card mb-3">
+                            <h5 class="mb-2">Tehcno Form title</h5>
+                            <ul class="mb-3 d-flex">
+                                <li><a href="" class="btn btn-outline-dark">URL</a></li>
+                                <li><a href="" class="btn btn-primary ms-2">Download PDF</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="display-card mb-3">
+                            <h5 class="mb-2">Tehcno Form title</h5>
+                            <ul class="mb-3 d-flex">
+                                <li><a href="" class="btn btn-outline-dark">URL</a></li>
+                                <li><a href="" class="btn btn-primary ms-2">Download PDF</a></li>
+                            </ul>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- formview -->
+
+        <!-- formedit -->
+        <div class="modal fade" id="formedit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+                        <div class="display-card">
+                            <h5 class="mb-2">Tehcno Form Details</h5>
+
+                            <div class="default-content-1">
+
+                                <div class="form-card mb-3">
+                                    <label class="form-label mb-0">Form Title</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="form-card mb-3">
+                                    <label class="form-label mb-0">Document Upload</label>
+                                    <input type="file" class="form-control">
+                                </div>
+
+                                <div class="form-card mb-3">
+                                    <label class="form-label mb-0">URL</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="form-card mb-3">
+                                    <label class="form-label mb-0">Add more files</label>
+                                    <button class="btn btn-sm btn-success ms-2">Add +</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-primary">Save Changes</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- formedit -->
+
+        <!-- formdelete -->
+        <div class="modal fade" id="formdelete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+                        <div class="display-card text-center">
+                            <h5 class="mb-2">Tehcno Form Details</h5>
+
+                            <div class="default-content-1">
+
+                                <p>Are you sure to delete?</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button class="btn btn-danger">Delete</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- formdelete -->
+
+    </section>
+
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
